@@ -5,6 +5,10 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
 class App extends Component {
+  componentDidMount = () => {
+    document.querySelector(".loader-container").style.display = "none";
+  }
+  
   render() {
     return (
       <div>

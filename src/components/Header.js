@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Particles from "react-particles-js";
 import ParticlesConfig from "./particle.config";
+import $ from "jquery";
 import Typed from "typed.js";
 class Header extends Component {
   state = {};
@@ -30,6 +31,11 @@ class Header extends Component {
       new Typed(typer, options);
     });
   }
+  scrollToProjects = e => {
+    let offset = $(".projects").offset().top;
+
+    $("html,body").animate({ scrollTop: offset }, 1000);
+  };
   render() {
     return (
       <header>
@@ -55,7 +61,11 @@ class Header extends Component {
             </h2>
           </div>
           <div>
-            <button className="header__btn btn " id="aniamtdBtn">
+            <button
+              onClick={this.scrollToProjects}
+              className="header__btn btn "
+              id="aniamtdBtn"
+            >
               Explore Projects
             </button>
           </div>
