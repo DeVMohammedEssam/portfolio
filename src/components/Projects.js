@@ -16,11 +16,12 @@ class Projects extends Component {
               link="https://instructorscoialnetwork.herokuapp.com"
             />
           </div>
+
           <div className="col-12 col-md-6">
             <ProjectCard
               projectName="E-Mall"
-              link="https://emallegy.herokuapp.com/"
               imageSrc="/images/projects/emall.png"
+              link="https://emallegy.herokuapp.com"
             />
           </div>
           <div className="col-12 col-md-6">
