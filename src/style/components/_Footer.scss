@@ -1,0 +1,32 @@
+footer {
+    background: $darkGrey;
+    height: 400px;
+    padding: 50px;
+    padding-bottom: 10px;
+    color: $white;
+
+    img {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+.contact {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.contact__icons {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.copy-right {
+    text-align: center;
+    margin-top: $margin-md*3;
+}

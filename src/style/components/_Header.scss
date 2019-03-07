@@ -1,0 +1,133 @@
+header {
+
+
+
+    @media screen and(min-width: "762px") {
+        height: $headerHeight-lg;
+    }
+
+    @media screen and(max-width: "762px") {
+        height: $headerHeight-md;
+    }
+
+    @media screen and(max-width: "552px") {
+        height: $headerHeight-sm;
+    }
+
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        background: $blackOverlay;
+        @extend %abs-full;
+        z-index: -1;
+    }
+
+    * {
+        white-space: nowrap;
+    }
+}
+
+
+.header__background {
+    background-image: url("/images/profile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @extend %abs-full;
+    z-index: -2;
+
+}
+
+.header__particles-container {
+    max-height: 100%;
+    @extend %abs-full;
+    z-index: 2;
+
+}
+
+
+.header__content {
+    position: relative;
+    color: $offWhite;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header__text-container {
+    z-index: 1;
+    font-family: $handwritingFont;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and(min-width: "762px") {
+        font-size: $titleFontSize-lg;
+    }
+
+    @media screen and(max-width: "762px") {
+        font-size: $titleFontSize-md
+    }
+
+    @media screen and(max-width: "552px") {
+        font-size: $titleFontSize-sm
+    }
+
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+    .typer {
+        color: lighten($orange, 10%);
+    }
+}
+
+.header__name {
+
+    #hi {
+        animation-duration: 1s;
+        animation-delay: 0.4s;
+    }
+
+    #name {
+        animation-duration: 1s;
+        animation-delay: 1.5s;
+    }
+}
+
+.title {
+    animation-duration: 1s;
+    animation-delay: 2s;
+    text-indent: 20px;
+}
+
+
+.header__btn {
+    position: relative;
+    z-index: 3;
+    color: $white !important;
+    background-color: $orange !important;
+    margin-top: $margin-md*2;
+    animation-delay: 2.5s;
+    transform: scale(0);
+
+    &:focus,
+    &:active {
+
+        box-shadow: 0 0 0 0.2rem rgba($orange, 0.25) !important;
+    }
+
+    @media screen and(max-width: "762px") {
+        font-size: 14px !important;
+    }
+
+
+}
