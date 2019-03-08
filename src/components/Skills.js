@@ -11,7 +11,7 @@ class Skills extends Component {
     let scrollFlag = false;
     $wn.scroll(function() {
       if (
-        $wn.scrollTop() >= $(".skills").offset().top - 100 &&
+        $wn.scrollTop() >= $(".skills").offset().top - 200 &&
         scrollFlag === false
       ) {
         if (!scrollFlag) {

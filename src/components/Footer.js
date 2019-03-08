@@ -17,6 +17,7 @@ const Footer = () => {
               className="my-4"
             >
               <img src="/images/icons/facebook.png" alt="" />
+              <span className="ml-4 text-light">Mohammed Essam</span>
             </a>
             <div className="my-4">
               <img src="/images/icons/gmail.png" alt="" />

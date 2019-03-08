@@ -5,12 +5,12 @@
 //general
 @import "general/settings";
 
-
 //components
 @import "components/Header";
 @import "components/Skills";
 @import "components/Projects";
 @import "components/Footer";
+@import "components/ImagePlaceHolder";
 //plugins
 @import "plugins/loading-bar";
 @import "../../node_modules/imagehover.css/scss/imagehover.scss";

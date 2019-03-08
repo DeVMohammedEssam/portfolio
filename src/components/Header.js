@@ -2,35 +2,10 @@ import React, { Component } from "react";
 import Particles from "react-particles-js";
 import ParticlesConfig from "./particle.config";
 import $ from "jquery";
-import Typed from "typed.js";
+
 class Header extends Component {
   state = {};
-  componentDidMount() {
-    const strings = [
-      "UI/UX designer",
-      "front-end developer",
-      "react.js developer"
-    ];
-    const options = {
-      strings,
-      typeSpeed: 20,
-      backSpeed: 20,
-      loop: true,
-      backDelay: 1500,
-      loopCount: Infinity
-    };
-    const typer = document.getElementById("header_typer");
-    let aniamtdBtn = document.getElementById("aniamtdBtn");
-    //animations
-
-    aniamtdBtn.classList.add("animated", "fadeInRight");
-    document.getElementById("hi").classList.add("animated", "fadeInRight");
-    document.getElementById("name").classList.add("animated", "fadeInRight");
-    document.querySelector(".title").classList.add("animated", "fadeInRight");
-    document.querySelector(".title").addEventListener("animationend", () => {
-      new Typed(typer, options);
-    });
-  }
+  componentDidMount() {}
   scrollToProjects = e => {
     let offset = $(".projects").offset().top;
 

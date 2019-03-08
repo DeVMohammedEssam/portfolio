@@ -1,9 +1,11 @@
 import React from "react";
+import LazyLoadImage from "./lazyLodedImg";
 const ProgressCard = ({ projectName, imageSrc, link }) => {
   return (
     <div className="projects__card">
       <figure className="imghvr-zoom-out card-border">
-        <img className="" alt="" src={imageSrc} />
+        <LazyLoadImage src={imageSrc} alt="" />
+
         <figcaption className="project__card__content--hover">
           <div className="project__card__content">
             <h2>{projectName}</h2>
