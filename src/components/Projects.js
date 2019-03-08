@@ -20,7 +20,7 @@ class Projects extends Component {
           <div className="col-12 col-md-6">
             <ProjectCard
               projectName="E-Mall"
-              imageSrc="/images/projects/emallPage.png"
+              imageSrc="/images/projects/emall.png"
               link="https://emallegy.herokuapp.com"
             />
           </div>
